@@ -1,52 +1,42 @@
 #!/usr/bin/python3
+"""
+Module for log parsing scripts.
+"""
+
+
 import sys
 
 
-def print_info():
-    print('File size: {:d}'.format(file_size))
+if __name__ == "__main__":
+    size = [0]
+    codes = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
 
-    for scode, code_times in sorted(status_codes.items()):
-        if code_times > 0:
-            print('{}: {:d}'.format(scode, code_times))
-
-
-status_codes = {
-    '200': 0,
-    '301': 0,
-    '400': 0,
-    '401': 0,
-    '403': 0,
-    '404': 0,
-    '405': 0,
-    '500': 0
-}
-
-lc = 0
-file_size = 0
-
-try:
-    for line in sys.stdin:
-        if lc != 0 and lc % 10 == 0:
-            print_info()
-
-        pieces = line.split()
-
+    def check_match(line):
+        '''Checks for regexp match in line.'''
         try:
-            status = int(pieces[-2])
-
-            if str(status) in status_codes.keys():
-                status_codes[str(status)] += 1
-        except:
+            line = line[:-1]
+            words = line.split(" ")
+            size[0] += int(words[-1])
+            code = int(words[-2])
+            if code in codes:
+                codes[code] += 1
+        except Exception as e:
             pass
 
-        try:
-            file_size += int(pieces[-1])
-        except:
-            pass
-
-        lc += 1
-
-    print_info()
-except KeyboardInterrupt:
-    print_info()
-    raise
+    def print_stats():
+        '''Prints accumulated statistics.'''
+        print("File size: {}".format(size[0]))
+        for k in sorted(codes.keys()):
+            if codes[k]:
+                print("{}: {}".format(k, codes[k]))
+    i = 1
+    try:
+        for line in sys.stdin:
+            check_match(line)
+            if i % 10 == 0:
+                print_stats()
+            i += 1
+    except KeyboardInterrupt:
+        print_stats()
+        raise
+    print_stats()
