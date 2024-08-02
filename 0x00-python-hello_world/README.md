@@ -49,3 +49,20 @@ What is the official Python coding style and how to check your code with `pycode
 * The prototypes of all your functions should be included in your header file called lists.h
 * Don’t forget to push your header file
 * All your header files should be include guarded.
+
+##### [0-run](./0-run)
+* The task is to write a Shell script that runs a Python script.
+* The Python file name will be saved in the environment variable `$PYFILE`
+* The command `export PYFILE=main.py`
+* The expected output is `Best School` after the command `./0-run` is run.
+
+**Explanation:** 
+* The `export` keyword instructs the shell to create a new environmental variable
+* The `PYFILE=main.py` assigns the value `main.py` to the variable `PYFILE`
+* The `$` sign in front of `$PYFILE` is used to substitute the value of the
+* environment variable `PYFILE` into the command
+* So, the command `python $PYFILE` effectively becomes `python3 main.py`
+* The [main.py](./main.py) is exported into the [0-run](./0-run) to get the
+* desired out by following the commands below.
+* 1. `export PYFILE=main.py` and
+* 2. `/.0-run`
