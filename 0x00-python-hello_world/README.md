@@ -64,6 +64,6 @@ What is the official Python coding style and how to check your code with `pycode
 * environment variable `PYFILE` into the command
 * So, the command `python $PYFILE` effectively becomes `python3 main.py`
 * The [main.py](./main.py) is exported into the [0-run](./0-run) to get the
-* desired out by following the commands below.
+* desired output by following the commands below:
 * 1. `export PYFILE=main.py` and
 * 2. `/.0-run`
