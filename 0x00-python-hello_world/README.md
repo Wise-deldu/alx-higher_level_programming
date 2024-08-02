@@ -54,8 +54,8 @@ What is the official Python coding style and how to check your code with `pycode
 ### 0-run
 * The task is to write a Shell script that runs a Python script.
 * The Python file name will be saved in the environment variable `$PYFILE`
-* The command `export PYFILE=main.py`
-* The expected output is `Best School` after the command `./0-run` is run.
+* Using the command `export PYFILE=main.py`
+* And the expected output is `Best School` after the command `./0-run` is executed.
 
 **Explanation:** 
 * The `export` keyword instructs the shell to create a new environmental variable
