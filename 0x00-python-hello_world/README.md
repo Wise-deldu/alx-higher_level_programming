@@ -50,7 +50,7 @@ What is the official Python coding style and how to check your code with `pycode
 * Don’t forget to push your header file
 * All your header files should be include guarded.
 
-##### 0-run
+##### **0-run**
 * The task is to write a Shell script that runs a Python script.
 * The Python file name will be saved in the environment variable `$PYFILE`
 * The command `export PYFILE=main.py`
