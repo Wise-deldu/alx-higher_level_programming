@@ -60,10 +60,13 @@ What is the official Python coding style and how to check your code with `pycode
 **Explanation:** 
 * The `export` keyword instructs the shell to create a new environmental variable
 * The `PYFILE=main.py` assigns the value `main.py` to the variable `PYFILE`
-* The `$` sign in front of `$PYFILE` is used to substitute the value of the
-* environment variable `PYFILE` into the command
+* The `$` sign in front of `$PYFILE` is used to substitute the value of the environment variable `PYFILE` into the command
 * So, the command `python $PYFILE` effectively becomes `python3 main.py`
-* The [main.py](./main.py) is exported into the [0-run](./0-run) to get the
-* desired output by following the commands below:
+* The [main.py](./main.py) is exported into the [0-run](./0-run) to get the desired output by following the commands below:
 * 1. `export PYFILE=main.py` and
 * 2. `/.0-run`
+
+
+### 1-run_inline
+* The task here is to write a *Shell script* that runs a *Python code*. 
+* The *Python code* will be saved in the environment variable $PYCODE.
