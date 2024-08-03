@@ -69,4 +69,12 @@ What is the official Python coding style and how to check your code with `pycode
 
 ### 1-run_inline
 * The task here is to write a *Shell script* that runs a *Python code*. 
-* The *Python code* will be saved in the environment variable $PYCODE.
+* The *Python code* will be saved in the environment variable `$PYCODE`.
+
+**Explanation:**
+* The `python3 -c "$PYCODE"` is used to execute a string of Python code directly from the command line without the need to create a separate `.py` file.
+* The `-c`: flag tells the Python interpreter to execute the following string as Python code.
+* The `"PYCODE"`: is a shell variable that contains the Python code to be executed. 
+* `export PYCODE='print(f"Best School: {88+10")'` is entered on the terminal
+* Then the executed file [1-run_inline](./1-run_inline) `./1-run_inline` is executed to produce the output `Best school: 98`
+* 
