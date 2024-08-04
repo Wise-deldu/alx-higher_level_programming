@@ -77,4 +77,12 @@ What is the official Python coding style and how to check your code with `pycode
 * The `"PYCODE"`: is a shell variable that contains the Python code to be executed. 
 * `export PYCODE='print(f"Best School: {88+10")'` is entered on the terminal
 * Then the executed file [1-run_inline](./1-run_inline) `./1-run_inline` is executed to produce the output `Best school: 98`
-* 
+
+### 2-print.py
+* The task here is to write a *Python script* that prints exactly `"Programming is like building a multilingual puzzle` followed by a new line.
+* The requirement is to use the `print` function.
+
+**Explanation:**
+* This project is simple and straightforward. 
+* To achieve `"` in front of the strings without errors due to double quotations, a `\` is used in front `"` to maintain it in the strings.
+* Here is the [solution](./2-print.py)
