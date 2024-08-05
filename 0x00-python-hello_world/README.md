@@ -112,8 +112,26 @@ What is the official Python coding style and how to check your code with `pycode
 
 **Explanation:**
 * This [solution](./4-print_float.py) contains `{number:.2f}` with the following meaning:
-  * `number` is a the variable holding the floating value.
+  * `number` is the variable holding the floating value.
   * `:` indicates what follows is a formatting specification.
   * `.2f` formats the number as a floating-point number with 2 decimal places.
 * When [./4-print_float.py](./4-print_float.py) is executed, the desired output `Float: 3.14` was yielded.
 
+### 5-print_string.py
+* The requirement for this task is to complete the [source code](https://github.com/alx-tools/0x00.py/blob/master/5-print_string.py) in order to print 3 times a string stored in the variable `str`, followed by its 9 characters.
+* The output of the program should be:
+  * 3 times the value of `str`
+  * followed by a new line
+  * followed by the 9 first characters of `str`
+  * followed by a new line
+* It is not allowed to use any loop or conditional statement.
+* The program should be maximum 5 lines long.
+* The output of the program should be:
+  * `Holberton SchoolHolberton SchoolHolberton School`
+  * `Holberton`
+
+**Explanation:**
+* The [solution](./5-print_string.py) contains 2 main parts.
+  * The multiplication of `str` variable by 3.
+  * And printing the substring of `str` by using slicing method where the 9 characters were produced by using `str[0:9]`. This means take substring of `str` starting from index '0' up to '8' but not including '9'.
+* This [./5-print_string.py](./5-print_string.py) yielded the desired output.
