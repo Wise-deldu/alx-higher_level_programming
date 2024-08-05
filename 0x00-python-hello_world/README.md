@@ -83,6 +83,19 @@ What is the official Python coding style and how to check your code with `pycode
 * The requirement is to use the `print` function.
 
 **Explanation:**
-* This project is simple and straightforward. 
+* This task is simple and straightforward. 
 * To achieve `"` in front of the strings without errors due to double quotations, a `\` is used in front `"` to maintain it in the strings.
 * Here is the [solution](./2-print.py)
+
+### 3-print_number.py
+* The requirement for this task is to complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/3-print_number.py) in order to print the integer stored in the variable `number`, followed by `Battery street`, followed by a new line. 
+* The output of the script should be:
+  * the number, followed by `Battery street`,
+  * followed by a new line.
+* It is not allowed to cast the variable `number` into a string.
+* It is required to use f-strings. 
+
+**Explanation:**
+* Here, the [solution](./3-print_number.py) is straightforward with f-strings.
+* The `d` attached to `number` in the curly braces indicates **decimal integer** which is a format specifier that that tells Python to format `number` as decimal integer.
+
