@@ -173,3 +173,27 @@ What is the official Python coding style and how to check your code with `pycode
 * Here is the [solution](./7-edges.py).
 * By executing [7-edges.py](./7-edges.py), the desired output was produced.
 
+### 8-concat_edges.py
+* The requirement of this task is to complete the [source code](https://github.com/alx-tools/0x00.py/blob/master/8-concat_edges.py) to print `object-oriented programming with Python`, followed by a new line.
+* It is not allowed to use any loops or conditional statements
+* The program should be exactly 5 lines long.
+* It is not allowed to create new variables.
+* It is not allowed to use string literals.
+* Desired output when `./8-concat_edges.py` is executed:
+  * `object-oriented programming with Python`
+* When `wc -l 8-concat_edges.py` is executed, the desired output should be:
+  * `5 8-concat_edges.py`
+
+**Explanation:**
+* This project is simple and straight forward with slicing.
+* By executing the [solution](./8-concat_edges.py), desired outputs were obtained.
+
+### 9-easter_egg.py
+* The requirement of this task is to write a Python script that prints "The Zen of Python", by TimPeters, followed by a new line.
+* The script should be maximum 98 characters long and checked with `wc -m 9-easter_egg.py`.
+
+**Explanation:**
+* This task is simple and straightforward.
+* The `this` module is a standard module in Python.
+* `The Zen of Python` is a collection of aphorisms which provides a set of philosophical guidelines for writing computer programs in Python.
+* By executing this [solution](./9-easter_egg.py), `The Zen of Python` is printed.
