@@ -135,3 +135,22 @@ What is the official Python coding style and how to check your code with `pycode
   * The multiplication of `str` variable by 3.
   * And printing the substring of `str` by using slicing method where the 9 characters were produced by using `str[0:9]`. This means take substring of `str` starting from index '0' up to '8' but not including '9'.
 * This [./5-print_string.py](./5-print_string.py) yielded the desired output.
+
+### 6-concat.py
+* The requirement of this task is to complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/6-concat.py) to print `Welcome to Holberton School!`
+* It is not allowed to use any loop or conditional statement.
+* It is required to use the variables `str1` and `str2` in the new line of code.
+* The program should be exactly 5 lines long.
+* The desired outputs:
+  * When  `./6-concat.py` is executed, the desired output should be:
+    * `Welcome to Holberton School!`
+  * When `wc -l 6-concat.py` is executed, the desired output should be:
+    * `5 6-concat.py`
+
+**Explanation:**
+* The [solution](./6-concat.py) is straightforward by using concatenation and assignment.
+* Breaking down the meaning of `wc -l 6-concat.py`.
+  * The `wc` means `word count` which is a command used to count lines, words, and characters in files.
+  * The `-l` flag specifies to count the number of lines.
+* When these commands were executed, the desired output required were gotten.
+
