@@ -154,3 +154,14 @@ What is the official Python coding style and how to check your code with `pycode
   * The `-l` flag specifies to count the number of lines.
 * When these commands were executed, the desired output required were gotten.
 
+### 7-edges.py
+* The requirement of this task is to complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/7-edges.py)
+* It is not allowed to use any loops or conditional statements.
+* The program should be exactly 8 lines long.
+* `word_first_3` should contain the first 3 letters of the variable `word`
+* `word_last_2` should contain the last 2 letters of the variable `word`
+* `middle_word` should contain the value of the variable `word` without the first and last letters.
+
+**Explanation:**
+* This task is straight forward using the slicing method.
+* Here is the [solution](./7-edges.py).
