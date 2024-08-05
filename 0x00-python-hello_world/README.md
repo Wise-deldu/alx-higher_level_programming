@@ -94,8 +94,26 @@ What is the official Python coding style and how to check your code with `pycode
   * followed by a new line.
 * It is not allowed to cast the variable `number` into a string.
 * It is required to use f-strings. 
+* Output must be: `98 Battery street`.
 
 **Explanation:**
 * Here, the [solution](./3-print_number.py) is straightforward with f-strings.
 * The `d` attached to `number` in the curly braces indicates **decimal integer** which is a format specifier that that tells Python to format `number` as decimal integer.
+* After executing the `./3-print_number.py`, the output is `98 Battery street`.
+
+### 4-print_float.py
+* The requirement for this task is to complete the [source code](https://github.com/alx-tools/0x00.py/blob/master/4-print_float.py) in order to print the float stored in the variable `number` with a precision of 2 digits.
+* The output of the program should be:
+  * `Float:`, followed by the float with only 2 digits.
+  * followed by a new line.
+* It is not allowed to cast `number` to string.
+* It is must to use f-strings.
+* Output must be: `Float: 3.14`.
+
+**Explanation:**
+* This [solution](./4-print_float.py) contains `{number:.2f}` with the following meaning:
+  * `number` is a the variable holding the floating value.
+  * `:` indicates what follows is a formatting specification.
+  * `.2f` formats the number as a floating-point number with 2 decimal places.
+* When [./4-print_float.py](./4-print_float.py) is executed, the desired output `Float: 3.14` was yielded.
 
