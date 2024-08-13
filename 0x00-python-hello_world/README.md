@@ -200,6 +200,7 @@ What is the official Python coding style and how to check your code with `pycode
 
 ### 10-check_cycle.c
 Below are the requirements of this project.
+
 **Technical interview preparation:**
 
 * You are not allowed to google anything
@@ -214,3 +215,6 @@ Requirements:
 * Only these functions are allowed: `write`, `printf`, `putchar`, `puts`, `malloc`, `free`
 
 **Explanation:**
+* This code implements `Floyd's Cycle-Finding Algorithm` popular known as `Tortoise and Hare algorithm`. 
+* The code uses two pointers moving at different speeds to detect if a cycle exists in a singly linked list.
+* If a cycle is present, the hare will meet the turtle, otherwise the hare will reach the end of the list. 
