@@ -215,6 +215,42 @@ Requirements:
 * Only these functions are allowed: `write`, `printf`, `putchar`, `puts`, `malloc`, `free`
 
 **Explanation:**
-* This code implements `Floyd's Cycle-Finding Algorithm` popular known as `Tortoise and Hare algorithm`. 
+* This code implements `Floyd's Cycle-Finding Algorithm` popularly known as `Tortoise and Hare algorithm`. 
 * The code uses two pointers moving at different speeds to detect if a cycle exists in a singly linked list.
 * If a cycle is present, the hare will meet the turtle, otherwise the hare will reach the end of the list. 
+* This is how the code works:
+    * This function `int check_cycle(listint_t *list)` checks whether the linked list `list` has a cycle. 
+    * The `list` parameter is a pointer to the head of a singly linked list type of type `listint_t`.
+    * The `listint_t *turtle, *hare;`
+        * The `turtle` moves through the list one node at a time.
+        * The `hare` moves through the list two nodes at a time.
+
+    ``` 
+     if (list == NULL || list->next == NULL)
+            return (0);
+    ```
+    * This above line checks if the list is `NULL(empty)` or if it contains one node (`list->next == NULL`).
+    * If this condition is true, there cannot be any cycle, so return 0.
+
+    ```
+    turtle = list->next;
+    hare = list->next->next;
+    ```
+    * This snippet initializes the pointers. 
+    * `turtle` starts at the second node of the list (`list->next`).
+    * `hare` starts at the third node of the list (`list->next->next`).
+
+    ```
+    while (turtle && hare && hare->next)
+    {
+        if (turtle == hare)
+            return (1);
+
+        turtle = turtle->next;
+        hare = hare->next->next;
+    }
+    ```
+    * **Condition:** The loop continues as long as `turtle`, `hare`, and `hare->next` are not NULL.
+    * **Cycle Detection:** Inside the loop, the function checks whether turtle and hare are pointing to the same node. 
+        * If they are, it indicates a cycle, and the function returns 1.
+* Here is the full [solution](./10-linked_lists.c).
