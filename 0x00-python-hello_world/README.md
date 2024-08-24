@@ -229,12 +229,14 @@ Requirements:
      if (list == NULL || list->next == NULL)
             return (0);
     ```
-    * This above line checks if the list is `NULL(empty)` or if it contains one node (`list->next == NULL`).
+
+    * The above line checks if the list is `NULL(empty)` or if it contains one node (`list->next == NULL`).
     * If this condition is true, there cannot be any cycle, so return 0.
 
     ```
     turtle = list->next;
     hare = list->next->next;
+
     ```
     * This snippet initializes the pointers. 
     * `turtle` starts at the second node of the list (`list->next`).
@@ -253,4 +255,4 @@ Requirements:
     * **Condition:** The loop continues as long as `turtle`, `hare`, and `hare->next` are not NULL.
     * **Cycle Detection:** Inside the loop, the function checks whether turtle and hare are pointing to the same node. 
         * If they are, it indicates a cycle, and the function returns 1.
-* Here is the full [solution](./10-linked_lists.c).
+* Here is the full [solution](./10-check_cycle.c).
