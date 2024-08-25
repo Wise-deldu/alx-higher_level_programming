@@ -203,9 +203,9 @@ Below are the requirements of this project.
 
 **Technical interview preparation:**
 
-* You are not allowed to google anything
+* It is not allowed to google anything
 * Whiteboard first
-* This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
+* This task checks the efficiency of the solution, i.e. is the solution’s runtime fast enough, does it require extra memory usage / mallocs, etc.
 Write a function in C that checks if a singly linked list has a cycle in it.
 
 * Prototype: `int check_cycle(listint_t *list);`
@@ -256,3 +256,16 @@ Requirements:
     * **Cycle Detection:** Inside the loop, the function checks whether turtle and hare are pointing to the same node. 
         * If they are, it indicates a cycle, and the function returns 1.
 * Here is the full [solution](./10-check_cycle.c).
+
+
+### 100-write.py
+* This task requires that a Python script is written and print exactly `and that piece of art is useful - Dora Korpar, 2015-10-19`, followed by a new line.
+* It is required to use the function `write` from the `sys` module.
+* It is not allowed to use `print`.
+* The script should print `stderr`.
+* The script should exit with the status code `1`.
+
+**Explanation:**
+* The `sys` module was imported and the code written using the `write` function as [solution](./100-write.py)
+* The status code was also demonstrated in the code. 
+
