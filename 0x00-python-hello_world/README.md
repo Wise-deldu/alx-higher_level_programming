@@ -269,3 +269,32 @@ Requirements:
 * The `sys` module was imported and the code written using the `write` function as [solution](./100-write.py)
 * The status code was also demonstrated in the code. 
 
+
+### 101-compile
+* This task requires a script that compiles a Python script file.
+* The Python file name is required to be stored in the environment variable $PYFILE
+* The output filename is required to be `$PYFILEc` (ex: `export PYFILE=my_main.py` => output filename:`my_main.pyc`)
+* The following commands were expected to be run the terminal:
+  * `export PYFILE=main.py`
+  * `./101-compile`
+  * `cat main.pyc | zgrep -c "Best School"`
+  * `od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFERENT`
+
+**Explanation:**
+* The `import` module was used to import `py_compile` which is a standard Python library used to compile Python source files into a bytecode. 
+* Here is the [solution.](./101-compile)
+
+
+### 102-magic_calculation.py
+* In this task, it is required to write the Python function `def magic_calculation(a, b):` that does exactly the same as represented by a bytecode in the task. 
+
+```
+  3           0 LOAD_CONST               1 (98)
+              3 LOAD_FAST                0 (a)
+              6 LOAD_FAST                1 (b)
+              9 BINARY_POWER
+             10 BINARY_ADD
+             11 RETURN_VALUE
+```
+* Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html)
+
