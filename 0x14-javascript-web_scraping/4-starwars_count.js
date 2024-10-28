@@ -16,4 +16,4 @@ request(URL, (error, response, body) => {
     );
     console.log(charFilms.length);
   }
-})
+});

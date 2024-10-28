@@ -18,4 +18,4 @@ request(baseURL, (error, response, body) => {
     }
   });
   console.log(aggregate);
-})
+});
